@@ -129,27 +129,20 @@ snapControls
 
 addLayersControls
 {
-    relativeSizes false;
-    expansionRatio 1.15;
-    finalLayerThickness 0.3;
+    relativeSizes true;
+        expansionRatio      1.15;
+    finalLayerThickness 0.5;
     minThickness 0.05;
 
     layers
     {
         buildings
         {
-            nSurfaceLayers 7;
+            nSurfaceLayers 3;
         }
         upstream1700m
         {
-            nSurfaceLayers 7;
-        }
-       "bottom_1|bottom_3"
-        {
-            nSurfaceLayers 7;
-            relativeSizes true;
-            finalLayerThickness 0.5
-            minThickness 0.05;
+            nSurfaceLayers 3;
         }
        "bottom_.*"
         {
@@ -192,7 +185,7 @@ addLayersControls
     // Overall max number of layer addition iterations. The mesher will exit
     // if it reaches this number of iterations; possibly with an illegal
     // mesh.
-    nLayerIter 200;
+    nLayerIter 300;
 }
 
 meshQualityControls
