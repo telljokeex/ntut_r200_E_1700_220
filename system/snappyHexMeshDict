@@ -130,8 +130,8 @@ snapControls
 addLayersControls
 {
     relativeSizes true;
-        expansionRatio      1.15;
-    finalLayerThickness 0.5;
+    expansionRatio      1.15;
+    finalLayerThickness 0.8;
     minThickness 0.05;
 
     layers
@@ -146,7 +146,7 @@ addLayersControls
         }
        "bottom_.*"
         {
-            nSurfaceLayers 7;
+            nSurfaceLayers 3;
         }
     }
 

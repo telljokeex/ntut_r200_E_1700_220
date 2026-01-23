@@ -204,11 +204,54 @@ sets
         end         ( 145.4	-86.4 500.);
         nPoints	    101;
     } 
-    front_box
+    inflow_C
     {
-        type cellCentre;
-        set front_box; // 與 topoSetDict 的 name 相同
-    }
+        type        uniform;
+        axis        z;
+        start       ( 1850.0	0   0.);
+        end         ( 1850.0	0 500.);
+        nPoints	    101;
+    } 
+    inflow_N
+    {
+        type        uniform;
+        axis        z;
+        start       ( 1850.0	130   0.);
+        end         ( 1850.0	130 500.);
+        nPoints	    101;
+    } 
+    inflow_S
+    {
+        type        uniform;
+        axis        z;
+        start       ( 1850.0	-130   0.);
+        end         ( 1850.0	-130 500.);
+        nPoints	    101;
+    } 
+    outflow_C
+    {
+        type        uniform;
+        axis        z;
+        start       ( 200.0	0   0.);
+        end         ( 200.0	0 500.);
+        nPoints	    101;
+    } 
+    outflow_N
+    {
+        type        uniform;
+        axis        z;
+        start       ( 200.0	130   0.);
+        end         ( 200.0	130 500.);
+        nPoints	    101;
+    } 
+    outflow_S
+    {
+        type        uniform;
+        axis        z;
+        start       ( 200.0	-130   0.);
+        end         ( 200.0	-130 500.);
+        nPoints	    101;
+    } 
 );
 
 

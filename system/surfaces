@@ -32,6 +32,17 @@ surfaces
             normal      (0    1 0);
           }
 	    }
+      z015
+      {
+	      type            cuttingPlane;
+	      planeType       pointAndNormal;
+	      interpolate 		true;
+        pointAndNormalDict
+	        {            
+            point       (0 0 1.5);
+            normal      (0 0 1);
+          }
+	    }
       y_lidar1
       {
 	      type            cuttingPlane;
@@ -54,17 +65,6 @@ surfaces
             normal      (0    1 0);
           }
 	    }
-      z015
-      {
-	      type            cuttingPlane;
-	      planeType       pointAndNormal;
-	      interpolate 		true;
-        pointAndNormalDict
-	        {            
-            point       (0 0 1.5);
-            normal      (0 0 1);
-          }
-	    }
       lidar_plane
       {
 	      type            cuttingPlane;
@@ -74,6 +74,28 @@ surfaces
 	        {            
             point       (-132 20 0);
             normal      (-0.358 -0.934 0);
+          }
+	    }
+      inflow
+      {
+	      type            cuttingPlane;
+	      planeType       pointAndNormal;
+	      interpolate 		true;
+        pointAndNormalDict
+	        {            
+            point       (1850 0 0);
+            normal      (1 0 0);
+          }
+	    }
+      outflow
+      {
+	      type            cuttingPlane;
+	      planeType       pointAndNormal;
+	      interpolate 		true;
+        pointAndNormalDict
+	        {            
+            point       (200 0 0);
+            normal      (1 0 0);
           }
 	    }
 	  );	

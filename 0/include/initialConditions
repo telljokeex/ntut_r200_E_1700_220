@@ -21,6 +21,3 @@ epsilonInlet #calc " pow( $ustar , 3 )  / ($Zref + $z0org - $zGroundorg) / $kapp
 
 omegaInlet #calc " $ustar / $kappa / sqrt( $Cmu ) / ($Zref + $z0org - $zGroundorg) ";
 
-
-
-

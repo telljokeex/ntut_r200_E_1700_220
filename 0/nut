@@ -26,13 +26,13 @@ boundaryField
 {
     buildings
     {
-        type            nutUWallFunction;
+        type            nutkWallFunction;
         #include        "include/ABLConditions"
         value           uniform 0;
     }
     upstream1700m
     {
-        type            nutUWallFunction;
+        type            nutkWallFunction;
         #include        "include/ABLConditions"
         value           uniform 0;
     }
@@ -59,10 +59,12 @@ boundaryField
     }
     "bottom.*"
     {
-        type            nutkAtmRoughWallFunction;
-//		type            nutUWallFunction;
-        #include        "include/ABLConditions"
-        value           uniform 0;
+        type            nutkRoughWallFunction;
+	#include        "include/ABLConditions"
+    	// 結合 #calc 與 uniform 語法
+    	Ks              uniform #calc "20.0 * $z0org";
+	Cs	uniform	0.5; 
+	value   uniform 0;
     }
 }
 
